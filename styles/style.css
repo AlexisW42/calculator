@@ -13,9 +13,18 @@ body {
 
 #calculator {
     display: flex;
+    flex-direction: column;
     width: 450px;
     height: 600px;
     border: 1px solid black;
     border-radius: 10px;
     background-color: rgb(67, 86, 87);
+}
+
+#display {
+    background-color: gray;
+}
+
+.column-buttons {
+    flex-grow: 1;
 }
