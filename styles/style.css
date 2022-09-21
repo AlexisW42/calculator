@@ -6,6 +6,7 @@ html, body {
 }
 
 body {
+    background: linear-gradient(180deg, #9cc9f7, #9effaf);
     align-items: center;
     justify-content: center;
 }
