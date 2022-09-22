@@ -14,17 +14,32 @@ body {
 #calculator {
     display: flex;
     flex-direction: column;
-    width: 450px;
-    height: 600px;
+    padding: 50px;
+    width: 390px;
+    height: 520px;
     border: 1px solid black;
     border-radius: 10px;
     background-color: rgb(67, 86, 87);
 }
 
 #display {
+    margin: 3px;
+    padding: 10px 0px 10px 0px;
     background-color: gray;
+    border: 2px solid black; border-radius: 3px;
+    width: 100%;
 }
 
-.column-buttons {
+.column {
+    display: flex;
     flex-grow: 1;
+}
+
+.first-column {
+    justify-content: end;
+}
+
+button {
+    width: 23%;
+    margin: 5px;
 }
