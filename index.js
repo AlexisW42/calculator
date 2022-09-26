@@ -11,7 +11,11 @@ buttonPressed.forEach(element => {
 function keyPressed() {
   const display = document.querySelector('#display');
   if (this.className == "number") {
-    if (display.innerHTML == 0) {
+    if (display.innerHTML == NaN)
+    {
+
+    }
+    if (display.innerHTML == 0 || display.innerHTML == "NaN") {
       display.innerHTML = `${this.innerHTML}`;
     }
     else {
@@ -34,8 +38,15 @@ function keyPressed() {
     else {
       addToOperation(display.innerHTML, lastType);
       display.innerHTML = `${result}`;
+      if(display.innerHTML="NaN"){
+        alert("Is not possible division by zero");
+        result=0;
+        display.innerHTML = `0`;
+      }
     }
   }
+  console.log(`display: ${display.innerHTML} boton: ${this.innerHTML} ultima operacion: ${lastType} primer numero: ${firstNumber} resultado: ${result}`)
+
 }
 
 function addToOperation(number, type) {
@@ -44,8 +55,9 @@ function addToOperation(number, type) {
     result = firstNumber + numberFloat;
   else if (type == "-")
     result = firstNumber - numberFloat;
-  else if (type == "/")
-   result = firstNumber / numberFloat;
+  else if (type == "/"){
+    result = firstNumber / numberFloat;
+  }
   else if (type == "*")
    result = firstNumber * numberFloat;
 }
