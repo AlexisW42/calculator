@@ -34,6 +34,11 @@ function keyPressed() {
     else {
       addToOperation(display.innerHTML, lastType);
       display.innerHTML = `${result}`;
+      if(display.innerHTML=="NaN"){
+        alert("Is not possible division by zero");
+        result=0;
+        display.innerHTML = `0`;
+      }
     }
   }
 }
