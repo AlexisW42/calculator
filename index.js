@@ -50,8 +50,7 @@ function keyPressed() {
       }
     }
   }
-  console.log(`display: ${display.innerHTML} boton: ${this.innerHTML} ultima operacion: ${lastType} primer numero: ${firstNumber} resultado: ${result}`)
-
+  //console.log(`display: ${display.innerHTML} boton: ${this.innerHTML} ultima operacion: ${lastType} primer numero: ${firstNumber} resultado: ${result}`)
 }
 
 function addToOperation(number, type) {
