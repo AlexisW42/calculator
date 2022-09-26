@@ -44,6 +44,7 @@ button {
     width: 23%;
     margin: 5px;
     font-size: 30px;
+    transition: all .07s ease;
 }
 
 #AC {
@@ -56,4 +57,8 @@ button {
 
 .operator {
     background-color: rgb(120, 196, 120);
+}
+
+.down {
+   transform: scale(0.9);
 }
